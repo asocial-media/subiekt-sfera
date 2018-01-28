@@ -1,0 +1,23 @@
+{
+    "name": "zoondo/subiekt-sfera",
+    "type": "library",
+    "description": "The PHP library to access and manage Subiekt GT Sfera",
+    "keywords": ["subiekt", "sfera", "php"],
+    "homepage": "https://zoondo.eu",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maciej Strączkowski",
+            "email": "m.straczkowski@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.4",
+        "ext-com": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zoondo\\Sfera\\": "source/"
+        }
+    }
+}
