@@ -99,11 +99,11 @@ class GT
     public function __construct($hostname, $database, $username, $password, $operator, $operatorPassword, $windowsAuth = 0, $encoding = CP_UTF8)
     {
         // We need to check if COM extension is available
-        if (!extension_loaded('com')) {
+        if (!extension_loaded('com_dotnet')) {
             
             // Throwing an exception if COM extension is unavailable
             throw new RuntimeException(
-                'Sorry, but COM extension is unavailable in your environment'
+                'Sorry, but "com_dotnet" extension is unavailable in your environment'
             );
         }
         
