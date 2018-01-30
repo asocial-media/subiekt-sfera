@@ -26,7 +26,20 @@ or just [download zip archive](https://github.com/zoondo/subiekt-sfera/archive/m
 ## Basic usage
 
 ```php
+/**
+ * Used namespaces
+ */
+use Zoondo\Sfera\GT;
+use Zoondo\Sfera\Application\Subiekt;
 
+// Creating an instance of GT
+$gt = new GT('(local)\INSERTGT', 'Test', 'sa', '', 'Szef', 'password123');
+
+// We are going to run Subiekt GT
+$subiekt = new Subiekt($gt);
+
+// We are now accessing Subiekt Sfera GT
+$subiekt->TowaryManager->Wczytaj(1);
 ```
 
 ## Unit testing
