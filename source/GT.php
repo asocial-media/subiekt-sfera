@@ -11,6 +11,20 @@ use COM;
 use RuntimeException;
 
 /**
+ * This class represents GT object using COM
+ * extension
+ * 
+ * It requires connection data in constructor
+ * 
+ * You can change connection data anytime using
+ * implemented setter method
+ * 
+ * Whenever you change connection data you need
+ * to call reconnect() method to make it work
+ * 
+ * You can use object of this class the same as
+ * you use Sfera GT object
+ * 
  * @author  Maciej Strączkowski <m.straczkowski@gmail.com>
  * @version 1.0.0
  */
@@ -104,7 +118,7 @@ class GT
            ->setWindowsAuthentication($windowsAuth)
            ->setEncoding($encoding);
         
-        // Trying to connect
+        // Trying to connect using above data
         $this->reconnect();
     }
     

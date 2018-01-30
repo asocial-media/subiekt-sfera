@@ -10,6 +10,20 @@ namespace Zoondo\Sfera\Application;
 use Zoondo\Sfera\GT;
 
 /**
+ * This class implements basic features for every
+ * GT application
+ * 
+ * Every application class must extend this class
+ * to make it work smoothly
+ * 
+ * You should use this class to implement your own
+ * applications i.e GRATYFIKANT or REWIZOR
+ * 
+ * All you have to do is extend three abstract methods
+ * 
+ * Every application class can be used in the same way
+ * as standard Subiekt GT object
+ * 
  * @author  Maciej Strączkowski <m.straczkowski@gmail.com>
  * @version 1.0.0
  */
