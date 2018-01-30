@@ -13,7 +13,7 @@
     ],
     "require": {
         "php": ">=5.2.4",
-        "ext-com": "*"
+        "ext-com_dotnet": "*"
     },
     "autoload": {
         "psr-4": {
