@@ -2,7 +2,7 @@
 /**
  * Namespace declaration
  */
-namespace Zoondo\Sfera\Application;
+namespace Zoondo\Sfera;
 
 /**
  * Used namespaces
@@ -10,27 +10,14 @@ namespace Zoondo\Sfera\Application;
 use Zoondo\Sfera\GT;
 
 /**
- * This class implements basic features for every
- * GT application
- * 
- * Every application class must extend this class
- * to make it work smoothly
- * 
- * You should use this class to implement your own
- * applications i.e GRATYFIKANT or REWIZOR
- * 
- * All you have to do is extend three abstract methods
- * 
- * Every application class can be used in the same way
- * as standard Subiekt GT object
- * 
- * @author  Maciej Strączkowski <m.straczkowski@gmail.com>
- * @version 1.0.0
+ * @author     Maciej Strączkowski <m.straczkowski@gmail.com>
+ * @copyright  ZOONDO.EU Maciej Strączkowski
+ * @version    1.0.0
  */
-abstract class AbstractApplication
+class Program
 {
     /**
-     * An instance of application
+     * An instance of current program
      * 
      * @var object
      */
@@ -81,7 +68,7 @@ abstract class AbstractApplication
      * która jest podłączona do wskazanego serwera z wykorzystaniem 
      * podanego użytkownika SQL Servera i podanej bazy danych.
      */
-    const ADJUT_USERNAME = 1;
+    const ADJUST_USERNAME = 1;
     
     /**
      * Adust mode:
@@ -90,7 +77,7 @@ abstract class AbstractApplication
      * która jest podłączona do wskazanego serwera, bazy danych oraz 
      * zalogowana na podanego użytkownika InsERT GT (operatora).
      */
-    const ADJUT_OPERATOR = 2;
+    const ADJUST_OPERATOR = 2;
     
     /**
      * Running mode:
@@ -140,18 +127,19 @@ abstract class AbstractApplication
      * It uses specified product id, adjust mode
      * and running mode
      * 
-     * @param   GT  $gt  An instance of GT
+     * @param   GT       $gt       An instance of GT
+     * @param   integer  $program  Product id number
+     * @param   integer  $adjust   Adjust mode
+     * @param   integer  $running  Running mode
      * @return  void
      */
-    public function __construct(GT $gt)
+    public function __construct(GT $gt, $program, $adjust, $running)
     {
         // Setting application id number
-        $gt->Produkt = $this->getProductId();
+        $gt->Produkt = $program;
         
         // Executing above application
-        $this->app = $gt->Uruchom(
-            $this->getAdjustMode(), $this->getRunningMode()
-        );
+        $this->app = $gt->Uruchom($adjust, $running);
     }
     
     /**
@@ -227,37 +215,4 @@ abstract class AbstractApplication
             $app->Zakoncz();
         }
     }
-    
-    /**
-     * Returns product id number which will be
-     * used in $gt->Produkt
-     * 
-     * You should use one of implemented const
-     * for example: SUBIEKT_GT or GESTOR_GT
-     * 
-     * @return  integer
-     */
-    abstract public function getProductId();
-    
-    /**
-     * Returns adjust mode which will be used
-     * in $gt->Uruchom() method
-     * 
-     * You should use one of implemented const
-     * for example: ADJUT_OPERATOR
-     * 
-     * @return  integer
-     */
-    abstract public function getAdjustMode();
-    
-    /**
-     * Returns running mode which will be used
-     * in $gt->Uruchom() method
-     * 
-     * You should use one of implemented const
-     * for example: RUN_IN_BACKGROUND
-     * 
-     * @return  integer
-     */
-    abstract public function getRunningMode();
 }

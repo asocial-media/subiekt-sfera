@@ -25,8 +25,9 @@ use RuntimeException;
  * You can use object of this class the same as
  * you use Sfera GT object
  * 
- * @author  Maciej Strączkowski <m.straczkowski@gmail.com>
- * @version 1.0.0
+ * @author     Maciej Strączkowski <m.straczkowski@gmail.com>
+ * @copyright  ZOONDO.EU Maciej Strączkowski
+ * @version    1.0.0
  */
 class GT
 {
