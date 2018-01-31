@@ -10,6 +10,17 @@ namespace Zoondo\Sfera;
 use Zoondo\Sfera\GT;
 
 /**
+ * This class is object representation of GT program
+ * 
+ * You must provide an instance of GT as constructor
+ * parameter to make it work
+ * 
+ * You can define adjust mode, running mode and program 
+ * to use (subiekt / rewizor / gestor etc)
+ * 
+ * You should use this class to get an instance of
+ * specified GT program in specified mode
+ * 
  * @author     Maciej Strączkowski <m.straczkowski@gmail.com>
  * @copyright  ZOONDO.EU Maciej Strączkowski
  * @version    1.0.0
@@ -133,7 +144,7 @@ class Program
      * @param   integer  $running  Running mode
      * @return  void
      */
-    public function __construct(GT $gt, $program, $adjust, $running)
+    public function __construct(GT $gt, $program, $adjust = self::ADJUST_OPERATOR, $running = self::ADJUST_NORMAL)
     {
         // Setting application id number
         $gt->Produkt = $program;
