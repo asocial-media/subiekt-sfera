@@ -1,9 +1,9 @@
 {
-    "name": "zoondo/subiekt-sfera",
+    "name": "asocial-media/subiekt-sfera",
     "type": "library",
     "description": "The PHP library to access and manage Subiekt GT Sfera",
     "keywords": ["subiekt", "sfera", "php"],
-    "homepage": "https://zoondo.eu",
+    "homepage": "https://asocial.media",
     "license": "MIT",
     "authors": [
         {
@@ -17,7 +17,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Zoondo\\Sfera\\": "source/"
+            "AsocialMedia\\Sfera\\": "source/"
         }
     }
 }

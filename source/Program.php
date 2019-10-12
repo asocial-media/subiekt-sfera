@@ -2,12 +2,7 @@
 /**
  * Namespace declaration
  */
-namespace Zoondo\Sfera;
-
-/**
- * Used namespaces
- */
-use Zoondo\Sfera\GT;
+namespace AsocialMedia\Sfera;
 
 /**
  * This class is object representation of GT program
@@ -21,9 +16,9 @@ use Zoondo\Sfera\GT;
  * You should use this class to get an instance of
  * specified GT program in specified mode
  * 
- * @author     Maciej Strączkowski <m.straczkowski@gmail.com>
- * @copyright  ZOONDO.EU Maciej Strączkowski
- * @version    1.0.0
+ * @author     ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
+ * @copyright  ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
+ * @version    2.0.0
  */
 class Program
 {

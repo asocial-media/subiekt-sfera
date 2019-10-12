@@ -2,7 +2,7 @@
 /**
  * Namespace declaration
  */
-namespace Zoondo\Sfera;
+namespace AsocialMedia\Sfera;
 
 /**
  * Used namespaces
@@ -25,9 +25,9 @@ use RuntimeException;
  * You can use object of this class the same as
  * you use Sfera GT object
  * 
- * @author     Maciej Strączkowski <m.straczkowski@gmail.com>
- * @copyright  ZOONDO.EU Maciej Strączkowski
- * @version    1.0.0
+ * @author     ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
+ * @copyright  ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
+ * @version    2.0.0
  */
 class GT
 {

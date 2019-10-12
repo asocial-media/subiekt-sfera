@@ -12,16 +12,16 @@ The PHP library to access and manage **Subiekt GT Sfera**
 ### Composer (recommended)
 
 ```bash
-$ composer require zoondo/subiekt-sfera
+$ composer require asocial-media/subiekt-sfera
 ```
 
 ### Manually
 
 ```bash
-$ git clone https://github.com/zoondo/subiekt-sfera.git
+$ git clone https://github.com/asocial-media/subiekt-sfera.git
 ```
 
-or just [download zip archive](https://github.com/zoondo/subiekt-sfera/archive/master.zip)
+or just [download zip archive](https://github.com/asocial-media/subiekt-sfera/archive/master.zip)
 
 ## Basic usage
 
@@ -29,8 +29,8 @@ or just [download zip archive](https://github.com/zoondo/subiekt-sfera/archive/m
 /**
  * Used namespaces
  */
-use Zoondo\Sfera\GT;
-use Zoondo\Sfera\Program;
+use AsocialMedia\Sfera\GT;
+use AsocialMedia\Sfera\Program;
 
 // Creating an instance of GT
 $gt = new GT('(local)\INSERTGT', 'Test', 'sa', '', 'Szef', 'password123');
