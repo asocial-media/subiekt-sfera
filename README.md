@@ -76,7 +76,7 @@ C:\Program Files (x86)\InsERT\InsERT GT\Pomoc\gta.chm
 
 ## Authors
 
-- Maciej Strączkowski - <m.straczkowski@gmail.com>
+- Maciej Strączkowski - <biuro@asocial.media>
 
 ## License
 

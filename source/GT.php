@@ -27,7 +27,7 @@ use RuntimeException;
  * 
  * @author     ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
  * @copyright  ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
- * @version    2.0.0
+ * @version    2.0.1
  */
 class GT
 {
@@ -95,6 +95,15 @@ class GT
     protected $gt;
     
     /**
+     * Connects to Subiekt Sfera using given credentials
+     *
+     * @param   string   $hostname           Database hostname
+     * @param   string   $database           Database name
+     * @param   string   $username           Database username
+     * @param   string   $password           Database password
+     * @param   string   $operator           Operator username
+     * @param   string   $operatorPassword   Operator password
+     * @param   string   $encoding
      * @throws  RuntimeException
      */
     public function __construct($hostname, $database, $username, $password, $operator, $operatorPassword, $windowsAuth = 0, $encoding = CP_UTF8)
@@ -104,7 +113,7 @@ class GT
             
             // Throwing an exception if COM extension is unavailable
             throw new RuntimeException(
-                'Sorry, but "com_dotnet" extension is unavailable in your environment'
+                'The "com_dotnet" extension is required'
             );
         }
         

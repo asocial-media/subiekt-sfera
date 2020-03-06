@@ -18,7 +18,7 @@ namespace AsocialMedia\Sfera;
  * 
  * @author     ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
  * @copyright  ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
- * @version    2.0.0
+ * @version    2.0.1
  */
 class Program
 {
