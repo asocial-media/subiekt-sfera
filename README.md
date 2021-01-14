@@ -1,6 +1,6 @@
 # README
 
-The PHP library to access and manage **Subiekt GT Sfera**
+The PHP library to access and manage **Subiekt GT and Navireo Sfera**
 
 ## Requirements
 
@@ -23,7 +23,7 @@ $ git clone https://github.com/asocial-media/subiekt-sfera.git
 
 or just [download zip archive](https://github.com/asocial-media/subiekt-sfera/archive/master.zip)
 
-## Basic usage
+## Basic usage of GT (Subiekt GT, Rachmistrz GT, Rewizor GT, Gratyfikant GT, Mikro Gratyfikant GT, Gestor GT)
 
 ```php
 /**
@@ -65,13 +65,33 @@ $subiekt->TowaryManager->Wczytaj(1);
 // Program::RUN_NORMAL, Program::RUN_IF_NOT_BLOCKED, Program::RUN_IN_BACKGROUND
 ```
 
-## Subiekt Sfera GT Documentation
+## Basic usage of Navireo
+
+```php
+/**
+ * Used namespaces
+ */
+use AsocialMedia\Sfera\Navireo;
+
+# Navireo is using *.iqa file instead of logging in
+# You can create *.iqa file using "Pulpit Konfiguracyjny" application
+# See: Users -> Select user for Sfera purposes -> Create start shortcut
+
+// Creating new instance
+$navireo = new Navireo('C:\your-iqa-file.iqa');
+
+// We are now accessing Sfera and trying to load product with id 1
+$navireo->TowaryManager->Wczytaj(1);
+```
+
+## Sfera Documentation
 
 You can find diagrams, examples and documentation in *.chm file which is
-located in Subiekt GT installation directory.
+located in Subiekt GT / Navireo installation directory.
 
 ```bash
 C:\Program Files (x86)\InsERT\InsERT GT\Pomoc\gta.chm
+C:\Program Files (x86)\InsERT\Navireo\Pomoc\gta.chm
 ```
 
 ## Authors

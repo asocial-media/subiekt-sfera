@@ -27,7 +27,7 @@ use RuntimeException;
  * 
  * @author     ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
  * @copyright  ASOCIAL MEDIA Maciej Strączkowski <biuro@asocial.media>
- * @version    2.0.1
+ * @version    2.1.0
  */
 class GT
 {
@@ -136,7 +136,7 @@ class GT
      * Tries to connect using stored parameters
      * 
      * You should use it whenever you change your 
-     * login creditionals
+     * login credentials
      * 
      * For example call it right after changing
      * operator to proceed it

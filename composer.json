@@ -1,7 +1,7 @@
 {
     "name": "asocial-media/subiekt-sfera",
     "type": "library",
-    "description": "The PHP library to access and manage Subiekt GT Sfera",
+    "description": "The PHP library to access and manage Subiekt GT and Navireo Sfera",
     "keywords": ["subiekt", "sfera", "php"],
     "homepage": "https://asocial.media",
     "license": "MIT",
